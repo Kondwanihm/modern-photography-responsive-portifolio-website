@@ -207,7 +207,7 @@ header {
     position: relative;
     padding: 7px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -230,6 +230,10 @@ nav.nav-wrapper ul li a {
 
 nav.nav-wrapper ul li a:hover {
     border-bottom: 1px solid #fff;
+}
+
+header .logo img {
+    max-width: 100px;
 }
 
 /* NAVIGATION BAR & HEADER STYLING END */

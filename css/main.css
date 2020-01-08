@@ -1,6 +1,5 @@
 /*RESET CSS BEGIN*/
 
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -87,14 +86,13 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
 
 /* HTML5 display-role reset for older browsers */
 
@@ -109,131 +107,143 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    font-family: 'monsterrate', sans-serif;
-    line-height: 1;
+  font-family: "monsterrate", sans-serif;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 /*RESET CSS END*/
 
-
 /*HELPER CLASS BEGIN*/
 
 .alignLeft {
-    float: left;
+  float: left;
 }
 
 .alignRight {
-    float: right;
+  float: right;
 }
 
 .no-margin-bottom {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .margin-bottom-10 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .margin-bottom-20 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .margin-bottom-30 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 strong,
 b {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 em,
 i {
-    font-style: italic;
+  font-style: italic;
 }
 
 p,
 ul li,
 ol li {
-    font-size: 16px;
-    line-height: 23px;
-    margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 20px 0;
 }
 
 ul li,
 ol li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 /*HELPER CLASS END*/
 
 * {
-    box-sizing: border-box;
-    outline: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 /* NAVIGATION BAR & HEADER STYLING START */
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: green;
+  transform: translateY(-200%);
+  transition: 0.3s;
+}
+
+body.scroll header.sticky {
+  transform: translateY(0);
+}
+
 header {
-    background: red;
+  background: red;
 }
 
 .nav-wrapper {
-    max-width: 1200px;
-    background: black;
-    margin: 0 auto;
-    position: relative;
-    padding: 7px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  background: black;
+  margin: 0 auto;
+  position: relative;
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav.nav-wrapper ul li {
-    display: inline-block;
-    margin-top: 0;
-    padding: 0 10px;
+  display: inline-block;
+  margin-top: 0;
+  padding: 0 10px;
 }
 
 nav.nav-wrapper ul li a {
-    font-size: 17px;
-    line-height: 22px;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 3px;
-    transition: 0.3s;
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 3px;
+  transition: 0.3s;
 }
 
 nav.nav-wrapper ul li a:hover {
-    border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 header .logo img {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 /* NAVIGATION BAR & HEADER STYLING END */

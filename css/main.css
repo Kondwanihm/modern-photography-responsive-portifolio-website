@@ -137,6 +137,10 @@ q:after {
 
 /*HELPER CLASS BEGIN*/
 
+img {
+  max-width: 100%;
+}
+
 .alignLeft {
   float: left;
 }
@@ -255,7 +259,7 @@ header .logo img {
 
 /* NAVIGATION BAR & HEADER STYLING END */
 
-/*PARALLAX STYLING START*/
+/*PARALLAX PAGE STYLING START*/
 
 .main-cover {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -269,7 +273,6 @@ ul#scene li.name {
   text-align: center;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
   width: 100%;
@@ -292,7 +295,8 @@ ul#scene {
   text-align: center;
 }
 
-.contact-btn:hover,.portifolio-btn:hover{
+.contact-btn:hover,
+.portifolio-btn:hover {
   background: #ffffff;
   color: #000;
   cursor: pointer;
@@ -318,4 +322,42 @@ ul#scene {
 .contact-btn {
   margin-left: 30px;
 }
-/*PARALLAX STYLING END*/
+
+/*PARALLAX PAGE STYLING END*/
+
+/* MASONRY JS STYLES START*/
+
+h1.sub-heading {
+  position: relative;
+  display: block;
+  margin: 70px auto;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+}
+h1.sub-heading::after {
+  display: block;
+  height: 2px;
+  background: #000;
+  content: "";
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+.masonry-grid {
+  position: relative;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 450px;
+}
+
+.tall-img {
+  height: 680px;
+}
+
+/* MASONRY JS STYLES END*/

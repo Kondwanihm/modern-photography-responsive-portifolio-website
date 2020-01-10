@@ -201,9 +201,10 @@ header.sticky {
   top: 0;
   left: 0;
   right: 0;
-  background: green;
+  background: rgba(0, 0, 0,0.90);
   transform: translateY(-200%);
   transition: 0.3s;
+  z-index: 5;
 }
 
 body.scroll header.sticky {
@@ -325,25 +326,7 @@ ul#scene {
 
 /*PARALLAX PAGE STYLING END*/
 
-/* MASONRY JS STYLES START*/
-
-h1.sub-heading {
-  position: relative;
-  display: block;
-  margin: 70px auto;
-  text-align: center;
-  font-size: 35px;
-  line-height: 40px;
-}
-h1.sub-heading::after {
-  display: block;
-  height: 2px;
-  background: #000;
-  content: "";
-  width: 100px;
-  margin: 30px auto 0 auto;
-}
-
+/* MASONRY JS STYLES START */
 .masonry-grid {
   position: relative;
 }
@@ -354,10 +337,28 @@ h1.sub-heading::after {
 
 .grid-item {
   width: 450px;
+  margin-bottom: 10px;
 }
 
 .tall-img {
   height: 680px;
 }
 
-/* MASONRY JS STYLES END*/
+h2.sub-title {
+  position: relative;
+  display: block;
+  margin: 70px auto;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+h2.sub-title::after {
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  content: "";
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+/* MASONRY SECTION STYLES END */
